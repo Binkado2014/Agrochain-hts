@@ -108,7 +108,7 @@ AgroToken is a utility and reward token designed to power Agrochain's ecosystem 
 - **Project Lead:** Abdulkadir Muhammed Gidado  
   - 📧 Email: amgk3hotline@gmail.com  
   - 🐦 Twitter: [@Amg_k3Hub](https://twitter.com/Amg_k3Hub)  
-  - 💬 Telegram: [@amgk3hotline](https://t.me/AMG_K3HUB1)
+  - 💬 Telegram: [@AMG_K3HUB1](https://t.me/AMG_K3HUB1)
 
 - **Organization:** Bin Kado Agro Pro Enterprises  
   - 🌍 Location: Dutsin Safe Low-Cost, Katsina, Nigeria  
