@@ -26,7 +26,26 @@ AgroToken is a utility token built on the Hedera Token Service (HTS), designed t
 
 ## 📹 Demo
 [YouTube Demo Video](your-link-here)
+## 🌍 About Us
 
+We are a grassroots tech-agro innovation team based in Katsina, Nigeria, committed to transforming agriculture through decentralized and inclusive technology. Our journey started with educating over 3,000 people about Web3 and Pi Network, and now we're expanding into practical tools using Hedera Hashgraph and other blockchain technologies.
+
+The Agrochain project is a step forward in digitizing local agriculture, ensuring traceability, secure value exchange, and building economic bridges between farmers and the broader global ecosystem. We strongly believe in open-source collaboration, community empowerment, and building for real impact.
+
+Our team combines local field experience with technical ambition — united under the belief that African agriculture deserves global-grade innovation.
+## 👥 Team Members
+
+### 1. Nura Muhammad Hassan
+- 📍 Role: Field Lead / Community Organizer  
+- 🔗 Telegram: [@hassannura](https://t.me/hassannura)
+
+### 2. Muhammadu Ado Duwan
+- 📍 Role: Tech Support / Outreach Coordinator  
+- 🔗 Telegram: [@Muhdwakili](https://t.me/Muhdwakili)
+
+### 3. Jeffumista
+- 📍 Role: Research & Documentation  
+- 🔗 Telegram: *Coming soon...*
 ## 💻 Tech Stack
 - Hedera HTS
 - Optional: EVM / Solidity
@@ -84,6 +103,16 @@ AgroToken is a utility and reward token designed to power Agrochain's ecosystem 
 - Bridge to EVM for DeFi
 - DAO governance integration
 - Staking & liquidity pools
+- ## 📞 Contact Info
+
+- **Project Lead:** Abdulkadir Muhammed Gidado  
+  - 📧 Email: amgk3hotline@gmail.com  
+  - 🐦 Twitter: [@Amg_k3Hub](https://twitter.com/Amg_k3Hub)  
+  - 💬 Telegram: [@amgk3hotline](https://t.me/amgk3hotline)
+
+- **Organization:** Bin Kado Agro Pro Enterprises  
+  - 🌍 Location: Dutsin Safe Low-Cost, Katsina, Nigeria  
+  - 📱 Phone: +234 803 557 9935
 -MIT License
 
 Copyright (c) 2025 Binkado2014
