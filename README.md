@@ -1,16 +1,24 @@
+```plaintext
 agrochain-hts/
-│
-├── contracts/                 # For future smart contracts (EVM optional)
-├── docs/                      # Tokenomics, flowcharts, future plan
-├── media/                     # Images, demo video, logo
-├── src/                       # Any frontend MVP code or simulation
-│
-├── README.md                  # Main hackathon project explanation
-├── LICENSE                    # MIT or open-source license
-├── .gitignore                 # Files to ignore
-└── AgroTokenSpec.md           # HTS token definition + logic
-# 🌾 AgroToken - Powered by Hedera HTS 🌿
-
+├── contracts/          # For future smart contracts (EVM optional)
+├── docs/               # Tokenomics, flowcharts, future plan
+├── media/              # Images, demo video, logo
+├── src/                # Any frontend MVP code or simulation
+├── README.md           # Main hackathon project explanation
+├── LICENSE             # MIT or open-source license
+├── .gitignore          # Files to ignore
+└── AgroTokenSpec.md    # HTS token definition + logic
+## 📚 Table of Contents
+- [Features](#-features)
+- [How It Works](#-how-it-works)
+- [Demo](#-demo)
+- [About Us](#-about-us)
+- [Team Members](#-team-members)
+- [Tech Stack](#-tech-stack)
+- [Token Specification](#-agrotoken-specification-hts)
+- [Contact Info](#-contact-info)
+- [Roadmap](#-agrochain-project-roadmap)
+- [License](#-license)
 AgroToken is a utility token built on the Hedera Token Service (HTS), designed to represent real agricultural value. It helps farmers tokenize harvests, inputs, and community support in a decentralized and verifiable way.
 
 ## 🔧 Features
@@ -113,6 +121,11 @@ AgroToken is a utility and reward token designed to power Agrochain's ecosystem 
 - **Organization:** Bin Kado Agro Pro Enterprises  
   - 🌍 Location: Dutsin Safe Low-Cost, Katsina, Nigeria  
   - 📱 Phone: +234 803 557 9935
+---
+
+## 🧾 License  
+This project is licensed under the [MIT License](./LICENSE).
+
 -MIT License
 
 Copyright (c) 2025 Binkado2014
