@@ -94,3 +94,55 @@ in the Software without restriction, including without limitation the rights to
 use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software...
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED... 
+# AgroToken Tokenomics
+
+AgroToken is a utility token designed to support agricultural value chain incentives, traceability, and digital inclusion across farming communities.
+
+## 💰 Token Supply
+
+- **Total Supply:** 100,000,000 AGT
+- **Decimals:** 8
+- **Mintable:** No
+- **Burnable:** Yes (via smart contract upgrade if needed)
+
+## 🔁 Allocation
+
+| Category              | Allocation | Description |
+|-----------------------|------------|-------------|
+| Community Rewards     | 40%        | Distributed to farmers, partners, and contributors. |
+| Team & Founders       | 20%        | Locked for 1 year, then vested monthly for 24 months. |
+| Partnerships & Grants | 15%        | For collaborations and hackathons. |
+| Liquidity Reserve     | 15%        | For exchanges and utility pools. |
+| Operations & Treasury | 10%        | Used for sustainability, audits, and future development. |
+
+## 🔄 Use Cases
+
+- Rewarding eco-farming practices.
+- Accessing digital tools, courses, and farming analytics.
+- Participation in DAO governance (future plan).
+
+## 🔐 Security Measures
+
+- Multi-signature treasury.
+- Usage of Hedera Token Service (HTS) for scalable and secure tokenization.
+- # Agrochain Project Roadmap
+
+## ✅ Phase 1: MVP Development (July 2025)
+- Setup GitHub Repo & Folder Structure
+- HTS Token Spec Drafting
+- Demo Video & Submission for Hackathons
+
+## 🚧 Phase 2: Testing & Feedback (Aug–Sep 2025)
+- Simulate farming token use in controlled environment
+- Launch mock campaigns with community
+- Gather feedback from early testers
+
+## 🚀 Phase 3: Pilot Deployment (Oct–Nov 2025)
+- Deploy AgroToken on Hedera Testnet
+- Partner with 1–2 real farming groups
+- Introduce Mobile Access and Data Collection tools
+
+## 🌍 Phase 4: DAO & Community Layer (Late 2025–2026)
+- Develop on-chain DAO voting for community proposals
+- Launch educational training for token holders
+- Explore inter-chain integration using EVM-compatible bridges
