@@ -125,7 +125,6 @@ AgroToken is a utility and reward token designed to power Agrochain's ecosystem 
 
 ## 🧾 License  
 This project is licensed under the [MIT License](./LICENSE).
-
 -MIT License
 
 Copyright (c) 2025 Binkado2014
