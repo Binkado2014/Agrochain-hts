@@ -26,7 +26,22 @@ AgroToken is a utility token built on the Hedera Token Service (HTS), designed t
 
 ## 📹 Demo
 [YouTube Demo Video](your-link-here)
-# AgroToken Specification (HTS)
+
+## 💻 Tech Stack
+- Hedera HTS
+- Optional: EVM / Solidity
+- GitHub + DoraHacks + YouTube
+
+## 📚 Future Plan
+- Real token deployment on Hedera
+- Farmer wallet
+- Marketplaces for input/output trade
+
+## 🔗 Useful Links
+- GitHub Repo
+- Project Twitter Thread
+- TokenSpec Document
+- # AgroToken Specification (HTS)
 
 ## Overview
 AgroToken is a utility and reward token designed to power Agrochain's ecosystem on Hedera. It uses the Hedera Token Service (HTS) for minting, transferring, and burning.
@@ -69,17 +84,13 @@ AgroToken is a utility and reward token designed to power Agrochain's ecosystem 
 - Bridge to EVM for DeFi
 - DAO governance integration
 - Staking & liquidity pools
-## 💻 Tech Stack
-- Hedera HTS
-- Optional: EVM / Solidity
-- GitHub + DoraHacks + YouTube
+-MIT License
 
-## 📚 Future Plan
-- Real token deployment on Hedera
-- Farmer wallet
-- Marketplaces for input/output trade
+Copyright (c) 2025 Binkado2014
 
-## 🔗 Useful Links
-- GitHub Repo
-- Project Twitter Thread
-- TokenSpec Document
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software...
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED... 
