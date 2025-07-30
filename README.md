@@ -92,7 +92,7 @@ AgroToken is a utility and reward token designed to power Agrochain's ecosystem 
 - **Decimals:** 2  
 - **Initial Supply:** 1,000,000 AGRO  
 - **Max Supply:** 10,000,000 AGRO (mintable)  
-- **Treasury Account:** (to be generated)  
+  **Treasury Account:** `0.0.9341135`
 - **Admin Key:** Held by Agrochain Team  
 - **Supply Key:** Controlled by Governance contract (future)
 
