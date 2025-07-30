@@ -26,7 +26,49 @@ AgroToken is a utility token built on the Hedera Token Service (HTS), designed t
 
 ## 📹 Demo
 [YouTube Demo Video](your-link-here)
+# AgroToken Specification (HTS)
 
+## Overview
+AgroToken is a utility and reward token designed to power Agrochain's ecosystem on Hedera. It uses the Hedera Token Service (HTS) for minting, transferring, and burning.
+
+---
+
+## Token Details
+
+- **Token Name**: AgroToken
+- **Symbol**: AGRO
+- **Type**: Fungible Token (HTS)
+- **Decimals**: 2
+- **Initial Supply**: 1,000,000 AGRO
+- **Max Supply**: 10,000,000 AGRO (mintable)
+- **Treasury Account**: (to be generated)
+- **Admin Key**: Held by Agrochain Team
+- **Supply Key**: Controlled by Governance contract (future)
+
+---
+
+## Token Logic
+
+- **Minting**: Admin can mint up to max supply.
+- **Burning**: Users can burn unused AGRO to reduce supply.
+- **Transfer**: P2P and platform-based transfers enabled.
+
+---
+
+## Use Cases
+
+1. Rewarding farmers for verified produce
+2. Discount on agro inputs via partners
+3. Loyalty system for long-term users
+4. Access to premium services in future Agrochain dApp
+
+---
+
+## Future Upgrade Plans
+
+- Bridge to EVM for DeFi
+- DAO governance integration
+- Staking & liquidity pools
 ## 💻 Tech Stack
 - Hedera HTS
 - Optional: EVM / Solidity
