@@ -1,6 +1,65 @@
 ![Hedera](https://img.shields.io/badge/Hedera-HTS-blue)
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 ![Hackathon](https://img.shields.io/badge/project-hackathon-orange)
+
+# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
+# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
+
+AgroChain is evolving into a multichain ecosystem. We combine **Hedera HTS** for trusted agricultural tokenization with **Sonic** for scalable DeFi, marketplaces, and liquidity—bridging value between the two.
+
+## Vision  
+Empower smallholder farmers with transparent, tokenized agricultural value and scalable access to markets and rewards by linking Hedera’s low-fee tokenization with Sonic’s high-throughput DeFi infrastructure.
+
+## Problem  
+Rural farmers need traceable value, reliable liquidity, and global market access. Single-chain solutions face limits in throughput or composability.
+
+## Solution  
+Deploy **AgroToken (AGRO)** on Hedera for native farming incentives, then **bridge** or represent that value on Sonic to enable:
+- High-speed marketplaces  
+- Yield-style rewards (DeFi)  
+- Cross-chain dashboard and liquidity access  
+
+## Architecture Overview
+
+1. **Hedera HTS**: AgroToken issuance, farmer reward minting, traceability.  
+2. **Bridge Layer**: Mirror/lock logic to represent AGRO on Sonic (wrapped AGRO).  
+3. **Sonic Layer**: Marketplace, staking/liquidity pools using wrapped AGRO.  
+4. **Relayer**: Watches Hedera events and mints/burns wrapped tokens on Sonic.
+
+## Core Features
+- Tokenized farming rewards on Hedera  
+- Cross-chain value representation on Sonic  
+- Scalable AgroMarket & liquidity pools  
+- Traceability via both chains  
+
+## Tech Stack
+- Hedera HTS  
+- Sonic (EVM layer)  
+- Bridge/Relayer service  
+- GitHub + DoraHacks  
+
+## Getting Started
+1. Checkout this branch: `sonic-integration`  
+2. Update `AgroTokenSpec.md` with cross-chain parameters.  
+3. Prototype the relayer watching Hedera and minting wrapped AGRO on Sonic.  
+
+## Team
+- Abdulkadir Muhammed Gidado – Lead  
+- Nura Muhammad Hassan – Field  
+- Muhammadu Ado Duwan – Tech Support  
+- Jeffumista – Research  
+- Vedika – Frontend  
+
+## Contact  
+amgk3hotline@gmail.com  
+https://github.com/Binkado2014/Agrochain-hts 
+
+## License  
+MIT License
+---
+![Hedera](https://img.shields.io/badge/Hedera-HTS-blue)
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Hackathon](https://img.shields.io/badge/project-hackathon-orange)
 # 🌾 Agrochain-HTS
 
 AgroToken is a utility token built on the Hedera Token Service (HTS), designed to represent real agricultural value. It helps farmers tokenize harvests, inputs, and community support in a decentralized and verifiable way.
@@ -40,6 +99,18 @@ AgroToken is a utility token built on the Hedera Token Service (HTS), designed t
 1. Farmers get AgroTokens for every harvest registered
 2. Tokens can be used in the local market or redeemed
 3. Future smart contracts will control rewards, savings, and loans
+
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Binkado2014/Agrochain-hts.git
+   cd Agrochain-hts
+git clone https://github.com/Binkado2014/Agrochain-hts.git
+cd Agrochain-hts
+git checkout sonic-integration
 
 ---
 
