@@ -43,9 +43,8 @@ AgroToken is a utility token built on the Hedera Token Service (HTS), designed t
 
 ---
 
-## 📹 Demo
-
-[YouTube Demo Video](your-link-here)
+## 📹 Demo  
+[Watch on YouTube](https://youtube.com/shorts/YZN6-7rF898?si=WqO3W1EQFRS2EV4i)
 
 ---
 
