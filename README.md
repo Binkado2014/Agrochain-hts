@@ -52,11 +52,11 @@ Deploy **AgroToken (AGRO)** on Hedera for native farming incentives, then **brid
 
 ## Contact  
 amgk3hotline@gmail.com  
-https://github.com/Binkado2014/Agrochain-hts  
+https://github.com/Binkado2014/Agrochain-hts 
 
 ## License  
 MIT License
-
+---
 ![Hedera](https://img.shields.io/badge/Hedera-HTS-blue)
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 ![Hackathon](https://img.shields.io/badge/project-hackathon-orange)
