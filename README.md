@@ -1,6 +1,12 @@
 ![Hedera](https://img.shields.io/badge/Hedera-HTS-blue)
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 ![Hackathon](https://img.shields.io/badge/project-hackathon-orange)
+
+# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
+...
+![Hedera](https://img.shields.io/badge/Hedera-HTS-blue)
+![MIT License](https://img.shields.io/badge/license-MIT-green)
+![Hackathon](https://img.shields.io/badge/project-hackathon-orange)
 # 🌾 Agrochain-HTS
 
 AgroToken is a utility token built on the Hedera Token Service (HTS), designed to represent real agricultural value. It helps farmers tokenize harvests, inputs, and community support in a decentralized and verifiable way.
