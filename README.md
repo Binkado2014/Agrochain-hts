@@ -2,7 +2,7 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 ![Hackathon](https://img.shields.io/badge/project-hackathon-orange)
 
-# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
+...# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
 ...# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
 
 AgroChain is evolving into a multichain ecosystem. We combine **Hedera HTS** for trusted agricultural tokenization with **Sonic** for scalable DeFi, marketplaces, and liquidity—bridging value between the two.
@@ -103,11 +103,6 @@ AgroToken is a utility token built on the Hedera Token Service (HTS), designed t
 ---
 
 ## 🚀 Getting Started
-
-**Clone the repository**
-   ```bash
-   git clone https://github.com/Binkado2014/Agrochain-hts.git
-   cd Agrochain-htsgit checkout sonic-integration
 
 ## 📹 Demo  
 [Watch on YouTube](https://youtube.com/shorts/H2ztwOlKZyw?si=EzqHHky9Vx_OpDov)
