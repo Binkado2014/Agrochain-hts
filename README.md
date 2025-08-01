@@ -104,12 +104,14 @@ AgroToken is a utility token built on the Hedera Token Service (HTS), designed t
 
 ## 🚀 Getting Started
 
-Follow these steps to explore the Agrochain-HTS repo:
-
-1. **Clone the repo**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/Binkado2014/Agrochain-hts.git
-   cd Agrochain-hts git checkout sonic-integration
+   cd Agrochain-hts
+   
+git clone https://github.com/Binkado2014/Agrochain-hts.git
+cd Agrochain-hts
+git checkout sonic-integration
 
 ## 📹 Demo  
 [Watch on YouTube](https://youtube.com/shorts/H2ztwOlKZyw?si=EzqHHky9Vx_OpDov)
