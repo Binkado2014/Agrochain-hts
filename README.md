@@ -2,8 +2,8 @@
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 ![Hackathon](https://img.shields.io/badge/project-hackathon-orange)
 
-...# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
-...# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
+# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
+# 🌾 AgroChain Multichain (Hedera ↔ Sonic)
 
 AgroChain is evolving into a multichain ecosystem. We combine **Hedera HTS** for trusted agricultural tokenization with **Sonic** for scalable DeFi, marketplaces, and liquidity—bridging value between the two.
 
