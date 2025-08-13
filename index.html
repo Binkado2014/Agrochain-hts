@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroChain-HTS | Farm-to-Table Tracking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AgroChain Logo">
+                <h1>AgroChain-HTS</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#tracking">Product Tracking</a></li>
+                    <li><a href="#token">AgroToken</a></li>
+                    <li><a href="#farmers">For Farmers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="dashboard">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transparent Agricultural Supply Chains</h2>
+                <p>Track your farm products from harvest to market using Hedera HTS technology</p>
+                <div class="cta-buttons">
+                    <a href="#tracking" class="btn primary">Scan Product QR</a>
+                    <a href="#token" class="btn secondary">View AgroToken Balance</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.jpg" alt="Farm produce tracking">
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tracking -->
+    <section class="tracking" id="tracking">
+        <div class="container">
+            <h2><i class="fas fa-qrcode"></i> Product Tracking</h2>
+            <div class="tracking-container">
+                <div class="qr-scanner">
+                    <div class="qr-placeholder">
+                        <i class="fas fa-camera"></i>
+                        <p>Scan product QR code</p>
+                    </div>
+                    <button id="scan-btn" class="btn primary">Scan Now</button>
+                </div>
+                <div class="product-info">
+                    <h3>Product Journey</h3>
+                    <div class="timeline" id="product-timeline">
+                        <p>Scan a product QR code to view its journey</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AgroToken Section -->
+    <section class="token" id="token">
+        <div class="container">
+            <h2><i class="fas fa-coins"></i> AgroToken Portal</h2>
+            <div class="token-dashboard">
+                <div class="balance-card">
+                    <h3>Your AgroToken Balance</h3>
+                    <div class="balance" id="token-balance">0.00 AGRO</div>
+                    <div class="actions">
+                        <button class="btn primary" id="refresh-balance">Refresh</button>
+                        <button class="btn secondary" id="send-tokens">Send</button>
+                    </div>
+                </div>
+                <div class="transaction-history">
+                    <h3>Recent Transactions</h3>
+                    <table id="transactions-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filled by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AgroChain-HTS. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+  </html>
