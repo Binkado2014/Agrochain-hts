@@ -29,6 +29,7 @@
             background-color: var(--background);
             color: var(--text);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         .container {
@@ -48,10 +49,16 @@
             cursor: pointer;
             text-decoration: none;
             font-weight: bold;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
+            background-color: var(--dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn.secondary {
             background-color: var(--secondary);
         }
 
@@ -64,6 +71,17 @@
             margin-bottom: 50px;
             font-size: 2.2rem;
             color: var(--dark);
+            position: relative;
+        }
+
+        h2:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            margin: 15px auto;
+            border-radius: 2px;
         }
 
         /* Header Styles */
@@ -74,13 +92,13 @@
             width: 100%;
             top: 0;
             z-index: 1000;
+            padding: 10px 0;
         }
 
         header .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
         }
 
         .logo {
@@ -88,14 +106,23 @@
             align-items: center;
         }
 
-        .logo img {
+        .logo-icon {
+            background-color: var(--primary);
+            color: white;
+            width: 40px;
             height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
             margin-right: 10px;
+            font-size: 1.2rem;
         }
 
         .logo h1 {
-            color: var(--primary);
+            color: var(--dark);
             font-size: 1.5rem;
+            font-weight: 700;
         }
 
         nav ul {
@@ -112,28 +139,61 @@
             color: var(--text);
             font-weight: 500;
             transition: color 0.3s;
+            position: relative;
+        }
+
+        nav ul li a:after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s;
         }
 
         nav ul li a:hover {
             color: var(--primary);
         }
 
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
         /* Hero Section */
         .hero {
-            margin-top: 80px;
+            margin-top: 70px;
             background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
             padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.2)"/></svg>');
+            background-size: cover;
+            opacity: 0.2;
         }
 
         .hero .container {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
+            z-index: 1;
         }
 
         .hero-content {
             flex: 1;
             padding-right: 40px;
+            animation: fadeInUp 1s ease;
         }
 
         .hero-content h2 {
@@ -141,17 +201,24 @@
             text-align: left;
             margin-bottom: 20px;
             color: var(--dark);
+            line-height: 1.2;
+        }
+
+        .hero-content h2:after {
+            margin: 15px 0;
         }
 
         .hero-content p {
             font-size: 1.2rem;
             margin-bottom: 30px;
             color: var(--text);
+            max-width: 600px;
         }
 
         .cta-buttons {
             display: flex;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         .hero-image {
@@ -159,25 +226,44 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            animation: fadeInRight 1s ease;
         }
 
-        .hero-image .image-placeholder {
+        .hero-image .image-container {
+            position: relative;
             width: 100%;
             max-width: 500px;
-            height: 300px;
+            height: 350px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
             background: linear-gradient(45deg, #4CAF50, #8BC34A);
-            border-radius: 8px;
-            box-shadow: var(--card-shadow);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: 1.2rem;
             text-align: center;
             padding: 20px;
         }
 
+        .hero-image .image-container i {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .hero-image .image-container h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
         /* Features Section */
+        .features {
+            background-color: white;
+            position: relative;
+        }
+
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -191,31 +277,46 @@
             border-radius: 8px;
             text-align: center;
             box-shadow: var(--card-shadow);
-            transition: transform 0.3s;
+            transition: all 0.3s ease;
+            border: 1px solid #eaeaea;
         }
 
         .feature-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
         }
 
         .feature-card i {
             font-size: 3rem;
             color: var(--primary);
             margin-bottom: 20px;
+            background: rgba(46, 125, 50, 0.1);
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin: 0 auto 25px;
         }
 
         .feature-card h3 {
             margin-bottom: 15px;
             color: var(--dark);
+            font-size: 1.4rem;
         }
 
         /* AgroToken Section */
+        .token {
+            background: linear-gradient(135deg, #f5fbf6 0%, #e3f2e5 100%);
+        }
+
         .token-dashboard {
             display: flex;
             gap: 30px;
             background: white;
             padding: 40px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: var(--card-shadow);
         }
 
@@ -226,31 +327,50 @@
             border-radius: 8px;
             color: white;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .balance-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
         }
 
         .balance {
             font-size: 2.5rem;
             font-weight: bold;
             margin: 20px 0;
+            font-family: 'Courier New', monospace;
         }
 
         .actions {
             display: flex;
             gap: 15px;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .btn.light {
             background-color: white;
             color: var(--primary);
+            flex: 1;
+            min-width: 120px;
         }
 
         .btn.light:hover {
-            background-color: var(--light);
+            background-color: #f0f0f0;
         }
 
         .transaction-history {
             flex: 2;
+        }
+
+        .transaction-history h3 {
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-size: 1.4rem;
         }
 
         table {
@@ -259,27 +379,36 @@
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         th, td {
             padding: 12px 15px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #eee;
         }
 
         th {
             background-color: var(--primary);
             color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
 
         /* Product Tracking */
+        .tracking {
+            background-color: white;
+        }
+
         .tracking-container {
             display: flex;
             gap: 30px;
             background: white;
             padding: 40px;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: var(--card-shadow);
         }
 
@@ -289,6 +418,9 @@
             padding: 30px;
             border-radius: 8px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .qr-placeholder {
@@ -300,36 +432,156 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
 
         .qr-placeholder i {
-            font-size: 3rem;
+            font-size: 5rem;
             margin-bottom: 15px;
             color: var(--primary);
         }
 
         .timeline {
             flex: 2;
-            padding: 20px;
+            padding: 0 20px;
             border-left: 3px solid var(--primary);
-            min-height: 200px;
         }
 
         .timeline-event {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+            padding: 20px;
+            position: relative;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
-        .timeline-event:last-child {
-            border-bottom: none;
-            margin-bottom: 0;
-            padding-bottom: 0;
+        .timeline-event:before {
+            content: "";
+            position: absolute;
+            left: -26px;
+            top: 25px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--primary);
         }
 
         .timeline-event h4 {
             color: var(--dark);
             margin-bottom: 5px;
+            font-size: 1.3rem;
+        }
+
+        .event-meta {
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e6f7ff 100%);
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 30px;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-size: 1.4rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .contact-detail i {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-right: 15px;
+            margin-top: 4px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--dark);
+            transform: translateY(-3px);
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .contact-form h3 {
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-size: 1.4rem;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.1);
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
         }
 
         /* Footer */
@@ -349,6 +601,24 @@
         .footer-section h3 {
             margin-bottom: 20px;
             font-size: 1.3rem;
+            color: white;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-section h3:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--primary);
+        }
+
+        .footer-section p {
+            margin-bottom: 20px;
+            color: #ddd;
         }
 
         .footer-section ul {
@@ -360,87 +630,118 @@
         }
 
         .footer-section ul li a {
-            color: var(--light-text);
+            color: #ddd;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         .footer-section ul li a:hover {
             color: var(--light);
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-
-        .social-links a {
-            color: var(--light-text);
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: var(--light);
+            padding-left: 5px;
         }
 
         .copyright {
             text-align: center;
             padding-top: 20px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         /* Responsive Styles */
-        @media (max-width: 768px) {
-            header .container {
-                flex-direction: column;
-            }
-
-            nav ul {
-                margin-top: 20px;
-            }
-
-            nav ul li {
-                margin-left: 15px;
-                margin-right: 15px;
-            }
-
+        @media (max-width: 992px) {
             .hero .container {
                 flex-direction: column;
             }
-
+            
             .hero-content {
                 padding-right: 0;
                 margin-bottom: 40px;
                 text-align: center;
             }
-
+            
             .hero-content h2 {
                 text-align: center;
             }
-
-            section {
-                padding: 60px 0;
+            
+            .hero-content h2:after {
+                margin: 15px auto;
             }
             
-            .token-dashboard,
-            .tracking-container {
-                flex-direction: column;
+            .cta-buttons {
+                justify-content: center;
             }
         }
 
-        @media (max-width: 480px) {
-            .hero-content h2 {
-                font-size: 2rem;
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                text-align: center;
             }
-
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .token-dashboard,
+            .tracking-container,
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .hero-content h2 {
+                font-size: 2.2rem;
+            }
+            
             h2 {
                 font-size: 1.8rem;
             }
             
+            section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
             .cta-buttons {
                 flex-direction: column;
-                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .feature-card {
+                padding: 20px;
             }
         }
     </style>
@@ -450,7 +751,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <div style="background-color: #2E7D32; color: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                <div class="logo-icon">
                     <i class="fas fa-leaf"></i>
                 </div>
                 <h1>AgroChain-HTS</h1>
@@ -475,13 +776,14 @@
                 <p>Track, verify, and optimize your agricultural products from farm to table with our blockchain-powered solution built on Hedera HTS.</p>
                 <div class="cta-buttons">
                     <a href="#tracking" class="btn">Track Product</a>
-                    <a href="#token" class="btn" style="background-color: #0288D1;">View AgroToken</a>
+                    <a href="#token" class="btn secondary">View AgroToken</a>
                 </div>
             </div>
             <div class="hero-image">
-                <div class="image-placeholder">
-                    <i class="fas fa-tractor" style="font-size: 3rem; margin-bottom: 15px;"></i>
-                    <p>Agricultural Supply Chain Visualization</p>
+                <div class="image-container">
+                    <i class="fas fa-tractor"></i>
+                    <h3>Farm-to-Table Traceability</h3>
+                    <p>Powered by Hedera HTS Technology</p>
                 </div>
             </div>
         </div>
@@ -508,7 +810,7 @@
                     <p>Quick access to product history with simple scans for consumers and distributors.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-coins"></i>
                     <h3>Token Rewards System</h3>
                     <p>Farmers earn AgroTokens for verified produce that can be redeemed for inputs and services.</p>
                 </div>
@@ -587,19 +889,25 @@
                 <div class="timeline" id="timeline">
                     <div class="timeline-event">
                         <h4>Organic Tomatoes (Batch #001)</h4>
-                        <p><strong>Harvest Date:</strong> 2023-05-15</p>
-                        <p><strong>Farm:</strong> Katsina Co-op Farm</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-calendar"></i> Harvested: 2023-05-15</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Katsina Co-op Farm</span>
+                        </div>
                     </div>
                     <div class="timeline-event">
                         <h4>Harvested</h4>
-                        <p><strong>Date:</strong> 2023-05-15</p>
-                        <p><strong>Location:</strong> Katsina State Farm</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-calendar"></i> 2023-05-15</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Katsina State Farm</span>
+                        </div>
                         <p>Organic tomatoes harvested under optimal conditions.</p>
                     </div>
                     <div class="timeline-event">
                         <h4>Processed</h4>
-                        <p><strong>Date:</strong> 2023-05-16</p>
-                        <p><strong>Location:</strong> Kano Processing Center</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-calendar"></i> 2023-05-16</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Kano Processing Center</span>
+                        </div>
                         <p>Washed, sorted, and packaged for distribution.</p>
                     </div>
                 </div>
@@ -611,24 +919,43 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <div style="display: flex; gap: 30px; background: white; padding: 40px; border-radius: 8px; box-shadow: var(--card-shadow);">
-                <div style="flex: 1;">
-                    <h3 style="margin-bottom: 20px; color: var(--dark);">Bin Kado Agro Pro Enterprises</h3>
-                    <p style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Dutsin Safe Low-Cost, Katsina, Nigeria</p>
-                    <p style="margin-bottom: 15px;"><i class="fas fa-phone"></i> +234 803 557 9935</p>
-                    <p style="margin-bottom: 15px;"><i class="fas fa-envelope"></i> amgk3hotline@gmail.com</p>
-                    <div class="social-links" style="margin-top: 20px;">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Bin Kado Agro Pro Enterprises</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Dutsin Safe Low-Cost, Katsina, Nigeria</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <p>+234 803 557 9935</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <p>amgk3hotline@gmail.com</p>
+                    </div>
+                    <div class="social-links">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-telegram"></i></a>
                         <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <div style="flex: 1;">
-                    <h3 style="margin-bottom: 20px; color: var(--dark);">Send us a message</h3>
-                    <form style="display: grid; gap: 15px;">
-                        <input type="text" placeholder="Your Name" style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
-                        <input type="email" placeholder="Your Email" style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
-                        <textarea placeholder="Your Message" style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; height: 120px;"></textarea>
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Type your message here"></textarea>
+                        </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
@@ -642,10 +969,165 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>AgroChain-HTS</h3>
-                    <p>Blockchain-powered agricultural supply chain tracking system built on Hedera HTS.</p>
+                    <p>Blockchain-powered agricultural supply chain tracking system built on Hedera HTS technology.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="#home">Home</a></li>
-       
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#token">AgroToken</a></li>
+                        <li><a href="#tracking">Product Tracking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Technology</h3>
+                    <ul>
+                        <li><a href="#">Hedera HTS</a></li>
+                        <li><a href="#">Blockchain</a></li>
+                        <li><a href="#">Supply Chain</a></li>
+                        <li><a href="#">Tokenization</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 AgroChain-HTS. All rights reserved. | Bin Kado Agro Pro Enterprises</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // QR Scanner functionality
+        const scanBtn = document.getElementById('scan-btn');
+        const timeline = document.getElementById('timeline');
+        
+        scanBtn.addEventListener('click', function() {
+            // Simulate scanning a product
+            const sampleProduct = {
+                id: 'AGRO-2023-05-001',
+                name: 'Organic Tomatoes',
+                harvestDate: '2023-05-15',
+                farmer: 'Katsina Co-op Farm',
+                journey: [
+                    { event: 'Harvested', date: '2023-05-15', location: 'Katsina Farm', details: 'Organic tomatoes harvested under optimal conditions.' },
+                    { event: 'Processed', date: '2023-05-16', location: 'Kano Processing', details: 'Washed, sorted, and packaged.' },
+                    { event: 'Shipped', date: '2023-05-18', location: 'To Lagos', details: 'Transported in refrigerated truck at 4°C.' },
+                    { event: 'Delivered', date: '2023-05-20', location: 'Lagos Supermarket', details: 'Available for purchase.' }
+                ]
+            };
+            
+            displayProductJourney(sampleProduct);
+        });
+        
+        function displayProductJourney(product) {
+            timeline.innerHTML = `
+                <div class="timeline-event">
+                    <h4>${product.name} (${product.id})</h4>
+                    <div class="event-meta">
+                        <span><i class="fas fa-calendar"></i> Harvested: ${product.harvestDate}</span>
+                        <span><i class="fas fa-map-marker-alt"></i> ${product.farmer}</span>
+                    </div>
+                </div>
+                ${product.journey.map(event => `
+                    <div class="timeline-event">
+                        <h4>${event.event}</h4>
+                        <div class="event-meta">
+                            <span><i class="fas fa-calendar"></i> ${event.date}</span>
+                            <span><i class="fas fa-map-marker-alt"></i> ${event.location}</span>
+                        </div>
+                        <p>${event.details}</p>
+                    </div>
+                `).join('')}
+            `;
+        }
+        
+        // AgroToken Balance Simulation
+        const tokenBalance = document.getElementById('token-balance');
+        const refreshBtn = document.getElementById('refresh-balance');
+        const sendBtn = document.getElementById('send-tokens');
+        
+        refreshBtn.addEventListener('click', function() {
+            // Simulate balance refresh
+            const currentBalance = parseFloat(tokenBalance.textContent.replace(/,/g, ''));
+            const newBalance = currentBalance + Math.random() * 10;
+            tokenBalance.textContent = newBalance.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + ' AGRO';
+            
+            // Show notification
+            showNotification('Balance refreshed successfully!');
+        });
+        
+        sendBtn.addEventListener('click', function() {
+            showNotification('Token transfer functionality will be implemented with Hedera Wallet Connect');
+        });
+        
+        // Form submission
+        const contactForm = document.querySelector('.contact-form form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                showNotification('Thank you for your message! We will contact you soon.');
+                contactForm.reset();
+            });
+        }
+        
+        // Notification function
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: var(--primary);
+                color: white;
+                padding: 15px 25px;
+                border-radius: 4px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 10000;
+                animation: fadeIn 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'fadeOut 0.3s ease';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+        
+        // Add notification animation styles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes fadeOut {
+                from { opacity: 1; transform: translateY(0); }
+                to { opacity: 0; transform: translateY(20px); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+                                </html>
