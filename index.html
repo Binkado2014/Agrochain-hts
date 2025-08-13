@@ -402,3 +402,250 @@
 
             nav ul li {
                 margin-left: 15px;
+                margin-right: 15px;
+            }
+
+            .hero .container {
+                flex-direction: column;
+            }
+
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            .hero-content h2 {
+                text-align: center;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+            
+            .token-dashboard,
+            .tracking-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div style="background-color: #2E7D32; color: white; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h1>AgroChain-HTS</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#token">AgroToken</a></li>
+                    <li><a href="#tracking">Tracking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Revolutionizing Agricultural Supply Chains</h2>
+                <p>Track, verify, and optimize your agricultural products from farm to table with our blockchain-powered solution built on Hedera HTS.</p>
+                <div class="cta-buttons">
+                    <a href="#tracking" class="btn">Track Product</a>
+                    <a href="#token" class="btn" style="background-color: #0288D1;">View AgroToken</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-tractor" style="font-size: 3rem; margin-bottom: 15px;"></i>
+                    <p>Agricultural Supply Chain Visualization</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-link"></i>
+                    <h3>Hedera HTS Integration</h3>
+                    <p>Immutable record-keeping for transparent supply chain tracking using Hedera Token Service.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>Farm-to-Table Traceability</h3>
+                    <p>Track every step of your agricultural products' journey from farm to consumer.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-qrcode"></i>
+                    <h3>QR Code Verification</h3>
+                    <p>Quick access to product history with simple scans for consumers and distributors.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Token Rewards System</h3>
+                    <p>Farmers earn AgroTokens for verified produce that can be redeemed for inputs and services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AgroToken Section -->
+    <section id="token" class="token">
+        <div class="container">
+            <h2>AgroToken Portal</h2>
+            <div class="token-dashboard">
+                <div class="balance-card">
+                    <h3>Your AgroToken Balance</h3>
+                    <div class="balance" id="token-balance">1,250.75 AGRO</div>
+                    <div class="actions">
+                        <button class="btn light" id="refresh-balance">Refresh</button>
+                        <button class="btn light" id="send-tokens">Send Tokens</button>
+                    </div>
+                </div>
+                <div class="transaction-history">
+                    <h3>Recent Transactions</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2023-05-15</td>
+                                <td>Harvest Reward</td>
+                                <td>+500.00 AGRO</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-10</td>
+                                <td>Market Sale</td>
+                                <td>+750.75 AGRO</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-05</td>
+                                <td>Input Purchase</td>
+                                <td>-250.00 AGRO</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>2023-05-01</td>
+                                <td>Co-op Bonus</td>
+                                <td>+250.00 AGRO</td>
+                                <td>Completed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tracking -->
+    <section id="tracking" class="tracking">
+        <div class="container">
+            <h2>Product Tracking</h2>
+            <div class="tracking-container">
+                <div class="qr-scanner">
+                    <div class="qr-placeholder">
+                        <i class="fas fa-qrcode"></i>
+                        <p>Scan product QR code to view journey</p>
+                    </div>
+                    <button id="scan-btn" class="btn">Scan Now</button>
+                </div>
+                <div class="timeline" id="timeline">
+                    <div class="timeline-event">
+                        <h4>Organic Tomatoes (Batch #001)</h4>
+                        <p><strong>Harvest Date:</strong> 2023-05-15</p>
+                        <p><strong>Farm:</strong> Katsina Co-op Farm</p>
+                    </div>
+                    <div class="timeline-event">
+                        <h4>Harvested</h4>
+                        <p><strong>Date:</strong> 2023-05-15</p>
+                        <p><strong>Location:</strong> Katsina State Farm</p>
+                        <p>Organic tomatoes harvested under optimal conditions.</p>
+                    </div>
+                    <div class="timeline-event">
+                        <h4>Processed</h4>
+                        <p><strong>Date:</strong> 2023-05-16</p>
+                        <p><strong>Location:</strong> Kano Processing Center</p>
+                        <p>Washed, sorted, and packaged for distribution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div style="display: flex; gap: 30px; background: white; padding: 40px; border-radius: 8px; box-shadow: var(--card-shadow);">
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 20px; color: var(--dark);">Bin Kado Agro Pro Enterprises</h3>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> Dutsin Safe Low-Cost, Katsina, Nigeria</p>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-phone"></i> +234 803 557 9935</p>
+                    <p style="margin-bottom: 15px;"><i class="fas fa-envelope"></i> amgk3hotline@gmail.com</p>
+                    <div class="social-links" style="margin-top: 20px;">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div style="flex: 1;">
+                    <h3 style="margin-bottom: 20px; color: var(--dark);">Send us a message</h3>
+                    <form style="display: grid; gap: 15px;">
+                        <input type="text" placeholder="Your Name" style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                        <input type="email" placeholder="Your Email" style="padding: 12px; border: 1px solid #ddd; border-radius: 4px;">
+                        <textarea placeholder="Your Message" style="padding: 12px; border: 1px solid #ddd; border-radius: 4px; height: 120px;"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AgroChain-HTS</h3>
+                    <p>Blockchain-powered agricultural supply chain tracking system built on Hedera HTS.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+       
