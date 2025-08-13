@@ -30,8 +30,8 @@ AgroToken is a utility token built on Hedera Token Service (HTS) that bridges re
 2. **Utility** - Tokens used in local markets or redeemed for value
 3. **Evolution** - Future smart contracts will enable rewards and loans
 
-‎## 📺 Demo 
-‎[Watch on YouTube](https://youtube.com/watch?v=hWaUthuscxw)
+## 📹 Demo  
+[Watch on YouTube](https://youtube.com/watch?v=hWaUthuscxw)
 
 ## 🌍 About Us
 We're a Katsina-based tech-agro innovation team transforming agriculture through decentralized technology. Our journey includes educating 3,000+ people about Web3 and now building practical tools on Hedera.
