@@ -43,6 +43,11 @@ We're a Katsina-based tech-agro innovation team transforming agriculture through
 | Muhammadu Ado Duwan | Tech Support | [Telegram](https://t.me/Muhdwakili) |
 | Jeffumista | Research | Coming Soon |
 
+## 🙏 Acknowledgments  
+- Hedera Hashgraph for HTS technology  
+- DoraHacks for hackathon support  
+- Our farming cooperatives in Katsina
+
 ## 💻 Tech Stack
 - **Core**: Hedera HTS
 - **Future**: EVM/Solidity
@@ -67,7 +72,7 @@ We're a Katsina-based tech-agro innovation team transforming agriculture through
 - Loyalty program for consistent users
 
 ## 📊 Tokenomics
-**Total Supply**: 100,000,000 AGT (8 decimals)
+**Total Supply**: 100,000,000 AGT (2 decimals)
 
 | Allocation | Percentage | Purpose |
 |------------|------------|---------|
