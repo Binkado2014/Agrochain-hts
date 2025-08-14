@@ -45,3 +45,51 @@ header {
     text-align: center;
     margin: 20px 0;
 }
+
+.agrovet-system {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.connect-btn, .order-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.supply-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-control button {
+  width: 30px;
+  height: 30px;
+}
+
+.status {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.instructions {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+    }
