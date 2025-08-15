@@ -81,8 +81,8 @@ Key goals:
 **Project Lead:** Abdulkadir Mohammed Gidado  
 **GitHub:** [Binkado2014](https://github.com/Binkado2014)  
 **Website:** [Agrochain-HTS Live](https://agrochain-hts.vercel.app/)  
-**Email:** example@email.com  
-**Phone/WhatsApp:** +234 XXX XXX XXXX  
+**Email:** amgk3hotline@gmail.com  
+**Phone/WhatsApp:** +2348035579935  
 **Location:** Nigeria
 
 ---
