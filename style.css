@@ -1,95 +1,88 @@
-:root {
-    --primary: #2E7D32; /* Green */
-    --text: #333;
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    color: #333;
 }
 
+/* Header */
 header {
-    background: white;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(90deg, #2E7D32, #66BB6A);
+    color: #fff;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+header img {
+    display: block;
+    margin: 0 auto 15px;
 }
 
-.logo img {
-    margin-right: 10px;
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-.hero {
-    background: #f5f5f5;
-    padding: 50px 0;
+header p {
+    font-size: 1rem;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2E7D32;
     text-align: center;
 }
 
-.btn {
-    background: var(--primary);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
+section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
 
-.scanner-placeholder {
-    background: #eee;
-    padding: 50px;
+/* Images */
+section img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
     text-align: center;
-    margin: 20px 0;
+    padding: 30px 20px;
+    background-color: #1B5E20;
+    color: #fff;
+    font-size: 0.9rem;
 }
 
-.agrovet-system {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+footer p {
+    margin: 0;
 }
 
-.connect-btn, .order-btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 10px 0;
-}
-
-.supply-item {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 8px;
-}
-
-.quantity-control {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.quantity-control button {
-  width: 30px;
-  height: 30px;
-}
-
-.status {
-  color: #2ecc71;
-  font-weight: bold;
-}
-
-.instructions {
-  margin-top: 30px;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.6rem;
     }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
