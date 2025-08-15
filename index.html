@@ -5,20 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AgroChain-HTS | Agricultural Supply Chain Tracking</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
   <header>
-    <img src="logo.png" alt="AgroChain-HTS Logo">
-    <h1>AgroChain-HTS</h1>
-    <p>Blockchain-powered farm-to-table traceability</p>
+    <div class="header-container">
+      <img src="logo.png" alt="AgroChain-HTS Logo" class="logo">
+      <h1>AgroChain-HTS</h1>
+      <p>Blockchain-powered farm-to-table traceability</p>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#agrovet">Agrovet</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#token">AgroToken</a></li>
+          <li><a href="#tokens">Token Details</a></li>
+          <li><a href="#tracking">Tracking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <section id="home">
-    <h2>Revolutionizing Agricultural Supply Chains</h2>
-    <p>Track, verify, and optimize agricultural products from farm to table with a blockchain-powered solution on Hedera Token Service (HTS).</p>
-    <img src="hero-image.png" alt="Agricultural Supply Chain">
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Revolutionizing Agricultural Supply Chains</h2>
+      <p>Track, verify, and optimize agricultural products from farm to table with a blockchain-powered solution on Hedera Token Service (HTS).</p>
+      <div class="cta">
+        <a href="#agrovet" class="btn">Explore Agrovet</a>
+        <a href="#tokens" class="btn secondary">View Token Details</a>
+        <a href="https://github.com/Binkado2014/AgroChain-HTS" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+    <img src="hero-image.png" alt="Agricultural Supply Chain" class="hero-img">
   </section>
 
   <!-- Agrovet Section -->
@@ -37,17 +59,116 @@
   <!-- Features Section -->
   <section id="features">
     <h2>Key Features</h2>
-    <ul>
-      <li>Hedera HTS Integration: Immutable records for transparent supply-chain tracking.</li>
-      <li>Farm-to-Table Traceability: Verify every step of the product journey.</li>
-      <li>QR Verification: Scan codes to view product journey instantly.</li>
-      <li>Token Rewards: Farmers earn AgroTokens for verified produce.</li>
-    </ul>
+    <div class="features-grid">
+      <div class="feature">
+        <i class="fa-solid fa-link"></i>
+        <h3>Hedera HTS Integration</h3>
+        <p>Immutable record-keeping for transparent supply-chain tracking using Hedera Token Service.</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-seedling"></i>
+        <h3>Farm-to-Table Traceability</h3>
+        <p>Follow each product step—from harvest to shelves—with verifiable checkpoints.</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-qrcode"></i>
+        <h3>QR Verification</h3>
+        <p>Scan codes to view the product journey instantly on any device.</p>
+      </div>
+      <div class="feature">
+        <i class="fa-solid fa-coins"></i>
+        <h3>Token Rewards</h3>
+        <p>Farmers earn AgroTokens for verified produce and can redeem for inputs/services.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Token Portal -->
+  <section id="token">
+    <h2>AgroToken Portal</h2>
+    <div class="token-wrap">
+      <div class="balance-card">
+        <h3>Your AgroToken Balance</h3>
+        <div class="balance" id="tokenBalance">1,250.75 AGRO</div>
+        <div class="cta">
+          <button class="btn" id="refreshBalance">Refresh</button>
+          <button class="btn" id="sendTokens">Send Tokens</button>
+        </div>
+      </div>
+      <div class="transactions">
+        <h3>Recent Transactions</h3>
+        <table>
+          <thead>
+            <tr><th>Date</th><th>Type</th><th>Amount</th><th>Status</th></tr>
+          </thead>
+          <tbody id="txTable">
+            <tr><td>2025-08-01</td><td>Harvest Reward</td><td>+500.00 AGRO</td><td>Completed</td></tr>
+            <tr><td>2025-07-28</td><td>Market Sale</td><td>+750.75 AGRO</td><td>Completed</td></tr>
+            <tr><td>2025-07-24</td><td>Input Purchase</td><td>-250.00 AGRO</td><td>Completed</td></tr>
+            <tr><td>2025-07-20</td><td>Co-op Bonus</td><td>+250.00 AGRO</td><td>Completed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Token Details -->
+  <section id="tokens">
+    <h2>Agrochain-HTS Testnet Tokens</h2>
+    <div class="token">
+      <h3>AMG Token</h3>
+      <ul>
+        <li>Symbol: AMG</li>
+        <li>Token ID (HTS): <code>0.0.6245782</code></li>
+        <li>Decimals: 2</li>
+        <li>Initial / Current Supply: 1,000,000</li>
+        <li>Supply Type: Infinite</li>
+      </ul>
+    </div>
+    <div class="token">
+      <h3>AgroToken</h3>
+      <ul>
+        <li>Symbol: AGRO</li>
+        <li>Token ID (HTS): <code>0.0.6573392</code></li>
+        <li>Decimals: 2</li>
+        <li>Initial / Current Supply: 1,000,000</li>
+        <li>Supply Type: Infinite</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Product Tracking -->
+  <section id="tracking">
+    <h2>Product Tracking</h2>
+    <div class="tracking-wrap">
+      <div class="qr">
+        <i class="fa-solid fa-qrcode"></i>
+        <p>Scan product QR to view journey</p>
+        <button class="btn" id="scanBtn">Scan Now</button>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Bin Kado Agro Pro Enterprises</p>
+    <p>Dutsin Safe Low-Cost, Katsina, Nigeria</p>
+    <p>Email: amgk3hotline@gmail.com</p>
+    <div class="social">
+      <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/"><i class="fab fa-telegram"></i></a>
+      <a href="https://github.com/Binkado2014/AgroChain-HTS"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 AgroChain-HTS. All rights reserved. | Bin Kado Agro Pro Enterprises</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
