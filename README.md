@@ -87,26 +87,77 @@ We're a Katsina-based tech-agro innovation team transforming agriculture through
 - DAO governance implementation
 - Staking mechanisms
 
-## 🗺 Roadmap
-### Phase 1: MVP (July 2025)
-- GitHub setup & token specs
-- Hackathon submission
+# Agrochain-HTS – Agricultural Tokenization on Hedera
 
-### Phase 2: Testing (Aug-Sep 2025)
-- Community simulations
-- Feedback collection
+Agrochain-HTS is a blockchain-powered platform leveraging the Hedera Hashgraph network to digitize and enhance the agricultural value chain.  
+It introduces tokenized assets for agricultural products and services, enabling transparency, efficiency, and trust between farmers, traders, and consumers.
 
-### Phase 3: Pilot (Oct-Nov 2025)
-- Testnet deployment
-- Real farming group partnerships
+---
 
-### Phase 4: Expansion (2026)
-- DAO voting implementation
-- Cross-chain integration
+## 🌱 Agrovet: Livestock Health & Youth Empowerment
+
+**Agrovet** is the flagship initiative running alongside Agrochain-HTS, focusing on modern livestock management, youth training, and animal welfare in Africa.
+
+### Key Objectives:
+- **Livestock Health:** Provide digital-first veterinary care and disease prevention.
+- **Youth Training (Giwo):** Deliver modern education on animal husbandry and dairy hygiene to young farmers.
+- **Market Access:** Facilitate buying & selling of livestock and products in both urban and rural markets.
+- **Research & Outreach:** Field visits to farms, markets, and nomadic settlements to understand and improve livestock conditions.
+- **Animal Welfare Advocacy:** Promote better living standards for livestock to improve productivity and reduce suffering.
+- **Innovations:** Tele-vet services, mobile tools, and token incentives (AGRO & AMG) to encourage participation.
+
+---
+
+## 💰 Testnet Token Details
+
+### AMG Token
+- **Token ID:** `0.0.6245782`
+- **Symbol:** AMG
+- **Type:** FUNGIBLE_COMMON
+- **Decimals:** 2
+- **Supply Type:** Infinite
+- **Initial Supply:** 1,000,000
+- **Current Supply:** 1,000,000
+- **EVM Address:** `0x00000000000000000000000000000000005ffd49`
+- **Treasury Account:** `0.0.6245782`
+- **Trade Fees:** None
+
+### AGRO Token
+- **Token ID:** `0.0.6573392`
+- **Symbol:** AGRO
+- **Type:** FUNGIBLE_COMMON
+- **Decimals:** 2
+- **Supply Type:** Infinite
+- **Initial Supply:** 1,000,000
+- **Current Supply:** 1,000,000
+- **EVM Address:** `0x0000000000000000000000000000000000644d50`
+- **Treasury Account:** `0.0.6255995`
+- **Metadata:** [GitHub Repo](https://github.com/binkado2014/agrichain-hts)
+- **Trade Fees:** None
+
+---
+
+## 🚀 Features
+- Tokenized agricultural assets for improved transparency.
+- Agrovet initiative for livestock health and training.
+- Testnet tokens for simulation and proof-of-concept.
+- Integration-ready for WalletConnect and Hedera SDK.
+
+---
+
+## 📅 Roadmap
+1. **Phase 1:** Testnet token creation and initial platform deployment. ✅
+2. **Phase 2:** Launch Agrovet pilot program with selected farmers. ⏳
+3. **Phase 3:** Full Agrochain-HTS + Agrovet integration with live token economy. 🔜
+4. **Phase 4:** Mobile app launch, tele-vet expansion, and regional scaling. 🔜
+
+---
 
 ## 📞 Contact
-**Project Lead**: Abdulkadir Muhammed Gidado  
-📧 amgk3hotline@gmail.com  
+- Project Lead: **Abdulkadir Muhammed Gidado**
+- GitHub: [Binkado2014](https://github.com/Binkado2014)
+- Website: [Agrochain-HTS on Vercel](https://agrochain-hts.vercel.app/)
+- 📧 amgk3hotline@gmail.com  
 🐦 [@Amg_k3Hub](https://twitter.com/Amg_k3Hub)  
 📱 [Telegram](https://t.me/AMG_K3HUB1)
 
