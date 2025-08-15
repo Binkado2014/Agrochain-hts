@@ -23,6 +23,7 @@ header {
 header img {
     display: block;
     margin: 0 auto 15px;
+    width: 80px;
 }
 
 header h1 {
@@ -39,6 +40,10 @@ section {
     padding: 60px 20px;
     max-width: 900px;
     margin: 0 auto;
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
 section h2 {
@@ -48,10 +53,14 @@ section h2 {
     text-align: center;
 }
 
-section p {
+section p, section ul {
     font-size: 1rem;
     line-height: 1.8;
-    text-align: justify;
+    margin-bottom: 15px;
+}
+
+section ul {
+    list-style: disc inside;
 }
 
 /* Images */
@@ -70,10 +79,6 @@ footer {
     background-color: #1B5E20;
     color: #fff;
     font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
 }
 
 /* Responsive */
