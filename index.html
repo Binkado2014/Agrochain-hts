@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -13,11 +13,11 @@
 <meta property="og:title" content="AgroChain-HTS (Demo)" />
 <meta property="og:description" content="Farm-to-table traceability + token rewards on Hedera HTS." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="og-image.png" />
+<meta property="og:image" content="/og-image.png" />
 <meta property="og:url" content="https://agrochain-hts.vercel.app/" />
 
 <!-- Icons -->
-<link rel="icon" type="image/png" href="logo.png" />
+<link rel="icon" type="image/png" href="/logo.png" />
 
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -42,7 +42,7 @@ header{position:fixed;top:0;left:0;right:0;background:#fff;box-shadow:0 2px 10px
 .nav-links a{color:var(--text);text-decoration:none;font-weight:500;position:relative}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--primary);transition:width .2s}
 .nav-links a:hover::after{width:100%}
-.menu-btn{display:none;background:none;border:none;font-size:1.4rem}
+.menu-btn{display:none;background:none;border:none;font-size:1.4rem;cursor:pointer}
 .banner{margin-top:64px;background:#fff3cd;border:1px solid #ffe58f;color:#664d03;padding:10px 0}
 .banner .container{display:flex;gap:10px;align-items:center;justify-content:center;font-size:.95rem}
 .hero{background:linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 100%);padding:72px 0}
@@ -76,14 +76,14 @@ tr:nth-child(even){background:#fafafa}
 .social a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--primary);color:#fff;text-decoration:none}
 footer{background:var(--dark);color:var(--light-text);padding:40px 0 18px}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-bottom:20px}
-.footer h4{margin-bottom:10px}
+.footer h4{margin-bottom:10px;color:#fff}
 .copy{border-top:1px solid rgba(255,255,255,.15);margin-top:14px;padding-top:14px;text-align:center;color:#cbd5c0;font-size:.9rem}
 
 @media (max-width:960px){
   .hero-wrap,.token-wrap,.tracking-wrap,.contact-wrap{flex-direction:column}
-  .nav-links{display:none}
+  .nav-links{display:none; position:absolute;top:64px;left:0;right:0;background:#fff;padding:20px;box-shadow:0 5px 10px rgba(0,0,0,0.1)}
   .menu-btn{display:block}
-  .nav-open .nav-links{display:flex;flex-direction:column;gap:14px;padding:12px 0}
+  .nav-open .nav-links{display:flex;flex-direction:column;gap:14px}
 }
 </style>
 </head>
@@ -91,7 +91,7 @@ footer{background:var(--dark);color:var(--light-text);padding:40px 0 18px}
 <header>
   <div class="container nav" id="topNav">
     <div class="brand">
-      <img src="logo.png" alt="AgroChain-HTS" class="brand-logo" />
+      <img src="/logo.png" alt="AgroChain-HTS" class="brand-logo" />
       <h1>AgroChain-HTS</h1>
     </div>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
@@ -161,11 +161,6 @@ footer{background:var(--dark);color:var(--light-text);padding:40px 0 18px}
 </section>
 
 <section id="token">
-  <div class="container">
-    <h3 class="sec">AgroToken Portal</h3>
-    <div class="token-wrap">
-
-      <section id="token">
   <div class="container">
     <h3 class="sec">AgroToken Portal</h3>
     <div class="token-wrap">
@@ -252,10 +247,10 @@ footer{background:var(--dark);color:var(--light-text);padding:40px 0 18px}
         </div>
       </div>
       <div class="contact-form">
-        <form>
+        <form action="#" method="POST">
           <input type="text" placeholder="Name" required style="width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border:1px solid #ccc">
           <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border:1px solid #ccc">
-          <textarea placeholder="Message" required style="width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border:1px solid #ccc"></textarea>
+          <textarea placeholder="Message" required style="width:100%;padding:10px;margin-bottom:12px;border-radius:8px;border:1px solid #ccc;height:120px"></textarea>
           <button type="submit" class="btn">Send Message</button>
         </form>
       </div>
@@ -293,7 +288,14 @@ const topNav = document.getElementById('topNav');
 menuBtn.addEventListener('click', () => {
   topNav.classList.toggle('nav-open');
 });
+
+// Close menu when clicking links
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    topNav.classList.remove('nav-open');
+  });
+});
 </script>
 
 </body>
-</html>
+    </html>
