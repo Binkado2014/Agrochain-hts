@@ -1,0 +1,11 @@
+{
+  "name": "agrochain-hts",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "serve -s",
+    "start": "serve -s"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
