@@ -1,27 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Agrochain-hts</title>
-  <style>
-    .logo-container {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .logo-container img {
-      width: 120px;
-      height: auto;
-    }
-  </style>
-</head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>AgroChain-HTS | Agricultural Supply Chain Tracking (Demo)</title>
-
-  <!-- Basic SEO -->
   <meta name="description" content="AgroChain-HTS: farm-to-table traceability and tokenized rewards built on Hedera Token Service. Demo UI for hackathon review." />
   <meta name="theme-color" content="#2E7D32" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="AgroChain-HTS (Demo)" />
   <meta property="og:description" content="Farm-to-table traceability + token rewards on Hedera HTS." />
   <meta property="og:type" content="website" />
@@ -56,6 +40,19 @@
     .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--primary);transition:width .2s}
     .nav-links a:hover::after{width:100%}
     .menu-btn{display:none;background:none;border:none;font-size:1.4rem}
+    
+    /* Logo styling */
+    .brand-logo {
+      height: 40px;
+      width: auto;
+      display: flex;
+      align-items: center;
+    }
+    .brand-logo img {
+      height: 100%;
+      width: auto;
+    }
+    
     .banner{margin-top:64px;background:#fff3cd;border:1px solid #ffe58f;color:#664d03;padding:10px 0}
     .banner .container{display:flex;gap:10px;align-items:center;justify-content:center;font-size:.95rem}
     .hero{background:linear-gradient(135deg,#e8f5e9 0%,#c8e6c9 100%);padding:72px 0}
@@ -101,14 +98,13 @@
   </style>
 </head>
 <body>
-  <header class="logo-container">
-    <img src="assets/logo.png" alt="Company Logo" class="logo">
-  </header>
-  <!-- Fixed Header -->
+  <!-- Fixed Header with integrated logo -->
   <header>
     <div class="container nav" id="topNav">
       <div class="brand">
-        <div class="brand-badge"><i class="fa-solid fa-leaf"></i></div>
+        <div class="brand-logo">
+          <img src="assets/logo.png" alt="AgroChain-HTS Logo">
+        </div>
         <h1>AgroChain-HTS</h1>
       </div>
       <button class="menu-btn" id="menuBtn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
@@ -384,4 +380,4 @@
     renderTimeline(sampleProduct);
   </script>
 </body>
-    </html>
+</html>
