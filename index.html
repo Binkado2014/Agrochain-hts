@@ -332,7 +332,7 @@
     document.getElementById('refreshBalance').addEventListener('click',()=>{
       const current=parseFloat(tokenBalance.textContent.replace(/[^\d.]/g,''));
       const next=(current + Math.random()*10).toFixed(2);
-      tokenBalance.textContent = Number(next).toLocaleString() + ' AGRO';
+      tokenBalance.textContent = Number(1,250.00).toLocaleString() + ' AGRO';
       notify('Balance refreshed (demo)');
     });
     document.getElementById('sendTokens').addEventListener('click',()=>{
